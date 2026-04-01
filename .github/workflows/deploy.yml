@@ -17,5 +17,5 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             cd /opt/apps/clearstartadvisors
-            git pull origin main || git clone git@github.com:fiveonredllc/clearstartadvisors.com.git .
+            git pull origin main || git clone github-clearstart:fiveonredllc/clearstartadvisors.com.git .
             docker compose up -d --build
